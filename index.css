@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_640.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  padding: 5px;
+  position: absolute;
+  top: 50px;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(4, 4, 4);
+}
+
+.todo-container {
+  width: 600px;
+  height: 100px;
+  background-color: rgba(240, 248, 255, 0.375);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  position: absolute;
+  top: 250px;
+}
+
+.todo-container .input-todo {
+  border: none;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 20px;
+}
+.todo-date {
+  height: 40px;
+  width: 140px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.todo-container button {
+  height: 40px;
+  width: 90px;
+  padding: 10px auto;
+  border: none;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.todo-list {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 150px 150px 150px;
+  row-gap: 30px;
+  background-color: rgba(255, 255, 255, 0.303);
+  height: 200px;
+  width: 600px;
+  position: absolute;
+  top: 400px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 40px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 5px;
+}
+
+.todo-list .delete-btn {
+  height: 40px;
+  width: 100px;
+  border: none;
+  text-transform: uppercase;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  margin-right: -200px;
+}
+
+.delete-btn:hover {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
+}
+
+.todo-list .date {
+  color: blue;
+  margin-right: -150px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.todo-list .name {
+  color: green;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.566);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
